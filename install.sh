@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # free some space
-sudo apt-get --yes --force-yes remove --purge blue
+sudo apt-get --yes --force-yes remove --purge bluej
 sudo apt-get --yes --force-yes remove --purge claws-mail
 sudo apt-get --yes --force-yes remove --purge debian-reference-*
 sudo apt-get --yes --force-yes remove --purge epiphany-browser*
