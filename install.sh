@@ -28,3 +28,10 @@ sudo rm -f /usr/share/raspi-ui-overrides/applications/scratch.desktop
 sudo rm -f /usr/share/raspi-ui-overrides/applications/SuperColliderIDE.desktop
 sudo rm -f /usr/share/raspi-ui-overrides/applications/wolfram-language.desktop
 sudo rm -f /usr/share/raspi-ui-overrides/applications/wolfram-mathematica.desktop
+
+# install kodi
+sudo apt-get --yes --force-yes install kodi
+
+# Keep console from turning off display
+sudo sed -i 's/^\(BLANK_TIME\s*=\s*\).*$/\10/' /etc/kbd/config
+sudo sed -i 's/^\(POWERDOWN_TIME\s*=\s*\).*$/\10/' /etc/kbd/config
